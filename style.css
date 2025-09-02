@@ -1,0 +1,57 @@
+/* Base */
+:root {
+  --primary: #2563eb;
+  --accent: #9333ea;
+}
+html { scroll-behavior: smooth; }
+body { line-height: 1.6; }
+
+/* Navbar */
+.navbar .nav-link {
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+.navbar .nav-link.active,
+.navbar .nav-link:hover {
+  color: #f8cdda !important;
+  border-bottom: 2px solid #f8cdda;
+}
+
+/* Hero (no vendor-prefixed props) */
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1e3a8a, #2563eb 40%, #7c3aed);
+  display: flex;
+  align-items: center;
+}
+.brand-accent {
+  color: #f8cdda;
+}
+
+/* Sections */
+.section { padding: 80px 0; }
+
+/* Profile image */
+.profile-img {
+  border: 4px solid var(--primary);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.profile-img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.15);
+}
+
+/* Cards */
+.skill-card, .project-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.skill-card:hover, .project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+}
+
+/* Progress bars */
+.progress { height: 12px; border-radius: 8px; }
+
+/* Footer */
+footer a { transition: opacity 0.2s ease; }
+footer a:hover { opacity: 0.85; }
